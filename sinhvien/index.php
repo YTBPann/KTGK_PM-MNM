@@ -24,14 +24,24 @@ $result = $conn->query($sql);
         h2 {
             text-align: center;
         }
-        a {
+        .add-button {
+            display: block;
+            width: 150px;
+            margin: 10px auto;
+            padding: 8px;
+            background-color: green;
+            color: white;
+            text-align: center;
             text-decoration: none;
-            color: blue;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
     <h2>DANH SÁCH SINH VIÊN</h2>
+
+    <a href="create.php" class="add-button">+ Thêm sinh viên</a>
+
     <table>
         <tr>
             <th>Mã SV</th>
